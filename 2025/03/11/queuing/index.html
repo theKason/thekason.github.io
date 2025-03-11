@@ -10,21 +10,23 @@
     <meta name="copyright" content="John Doe">
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     <meta name="description" content="">
-    <meta name="description" content="Hello folk, Good to see ya!My name is Kason. I am currently working on a master degree of computer science at the University of Wollongong, Australia. It is a greate pleasure to meet you here at my pe">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Helloooooo">
-<meta property="og:url" content="http://www.thekason.com/about/index.html">
+    <meta name="description" content="Project Name: Microservices-Based Order Processing System with Message QueueProject OverviewDesign and implement a simplified online shopping order processing system using a microservices architecture">
+<meta property="og:type" content="article">
+<meta property="og:title" content="queuing">
+<meta property="og:url" content="http://www.thekason.com/2025/03/11/queuing/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Hello folk, Good to see ya!My name is Kason. I am currently working on a master degree of computer science at the University of Wollongong, Australia. It is a greate pleasure to meet you here at my pe">
+<meta property="og:description" content="Project Name: Microservices-Based Order Processing System with Message QueueProject OverviewDesign and implement a simplified online shopping order processing system using a microservices architecture">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-03-03T06:12:13.022Z">
-<meta property="article:modified_time" content="2025-03-03T06:12:13.022Z">
+<meta property="article:published_time" content="2025-03-11T11:52:56.000Z">
+<meta property="article:modified_time" content="2025-03-11T12:05:57.742Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Laravel">
+<meta property="article:tag" content="Queue">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/kason.ico">
-    <title>Helloooooo · Kason&#39;s cave</title>
+    <title>queuing · Kason&#39;s cave</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -212,6 +214,7 @@
             document.write('<script src="/lib/jquery.min.js" />')
         }
     </script>
+        <body class="post-body">
         <!-- header -->
         <header class="header header-mobile">
     <!-- top read progress line -->
@@ -241,7 +244,7 @@
             <a href="/">Kason&#39;s cave</a>
         </div>
         <div class="post-title header-element">
-            <a href="#" class="post-name">Helloooooo</a>
+            <a href="#" class="post-name">queuing</a>
         </div>
     </div>
 </header>
@@ -258,20 +261,61 @@
 
         <!-- wrapper -->
         <div class="wrapper">
-            <div class="site-intro" style="">
+            <div class="site-intro" style="    height:50vh;
+">
     <!-- 主页  -->
+    <!-- 404页  -->
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/lantern.jpeg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+                queuing
+            <!-- 404 -->
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
+            <!-- 404 -->
         </p>
         <!-- 文章页 meta -->
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                    <div class="post-intro-tags" >
+        <a class="post-tag" href="javascript:void(0);" data-tags="Laravel">Laravel</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="Queue">Queue</a>
+</div>
+
+                <!-- 文章字数统计 -->
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">733</span>Reading time: <span class="post-count reading-time">4 min</span></span>
+                    </div>
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2025/03/11</span>
+                    <!-- busuanzi -->
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
     </div>
 </div>
 
@@ -402,10 +446,196 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <h2 id="Hello-folk-Good-to-see-ya"><a href="#Hello-folk-Good-to-see-ya" class="headerlink" title="Hello folk, Good to see ya!"></a>Hello folk, Good to see ya!</h2><p>My name is Kason. I am currently working on a master degree of computer science at the University of Wollongong, Australia. It is a greate pleasure to meet you here at my personal site, where I haven’t put much since it’s built quite freshly. Here, however, I will put on some tech-savvy blogs and more of myself. Again, thanks for visiting!</p>
-<p>Wish to be part of making the planet better.</p>
-<p>Kason Ho</p>
-<h2 id="A-bit-about-me"><a href="#A-bit-about-me" class="headerlink" title="A bit about me"></a><a href="/assets/CV.pdf">A bit about me</a></h2>
+        <h2 id="Project-Name-Microservices-Based-Order-Processing-System-with-Message-Queue"><a href="#Project-Name-Microservices-Based-Order-Processing-System-with-Message-Queue" class="headerlink" title="Project Name: Microservices-Based Order Processing System with Message Queue"></a><strong>Project Name: Microservices-Based Order Processing System with Message Queue</strong></h2><h3 id="Project-Overview"><a href="#Project-Overview" class="headerlink" title="Project Overview"></a><strong>Project Overview</strong></h3><p>Design and implement a simplified online shopping order processing system using a microservices architecture. The system decouples order, inventory, payment, and notification modules, enabling asynchronous communication between services via a message queue. This enhances system scalability and fault tolerance while providing hands-on experience with message queues in real-world business scenarios.</p>
+<hr>
+<h3 id="Main-Features-Modules"><a href="#Main-Features-Modules" class="headerlink" title="Main Features &amp; Modules"></a><strong>Main Features &amp; Modules</strong></h3><p><strong>Order Service</strong></p>
+<ul>
+<li><p><strong>Functions:</strong></p>
+<ul>
+<li>Receive user order requests, validate order data, and store it initially.<ul>
+<li>Validation ensures completeness and correctness:<ol>
+<li>Order amount cannot be negative.</li>
+<li>Product ID must be valid.</li>
+<li>Purchase quantity must be a positive integer.</li>
+</ol>
+</li>
+<li>Frontend data validation methods:<ol>
+<li>Use token-based authentication.</li>
+<li>Implement signature mechanisms.</li>
+<li>Prevent CSRF (Cross-Site Request Forgery).</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Publish order creation events to the message queue.</li>
+</ul>
+</li>
+<li><p><strong>Key Learning Points:</strong></p>
+<ul>
+<li>How to encapsulate business events as messages and publish them to a queue.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Inventory Service</strong></p>
+<ul>
+<li><p><strong>Functions:</strong></p>
+<ul>
+<li>Listen for order creation messages and check the inventory.</li>
+<li>Lock inventory if available, then send confirmation or failure messages.</li>
+</ul>
+</li>
+<li><p><strong>Key Learning Points:</strong></p>
+<ul>
+<li>How to subscribe to a message queue and process messages.</li>
+<li>Ensure <strong>idempotency</strong> (avoid duplicate inventory deductions).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Payment Service</strong></p>
+<ul>
+<li><p><strong>Functions:</strong></p>
+<ul>
+<li>Process order payments after inventory confirmation.</li>
+<li>After payment completion, notify other services via message queue.</li>
+</ul>
+</li>
+<li><p><strong>Key Learning Points:</strong></p>
+<ul>
+<li>Implement an <strong>asynchronous payment process</strong> and simulate a payment gateway with callback handling.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Notification Service</strong></p>
+<ul>
+<li><p><strong>Functions:</strong></p>
+<ul>
+<li>Receive payment results or order status updates and send email&#x2F;SMS notifications to users.</li>
+</ul>
+</li>
+<li><p><strong>Key Learning Points:</strong></p>
+<ul>
+<li>Message consumption and <strong>reliable message delivery</strong>.</li>
+<li>Handling delayed tasks (e.g., order timeout notifications).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Application-of-Message-Queue-Technology"><a href="#Application-of-Message-Queue-Technology" class="headerlink" title="Application of Message Queue Technology"></a><strong>Application of Message Queue Technology</strong></h3><ul>
+<li><p><strong>Choosing a Message Broker:</strong><br>You can use <strong>RabbitMQ, Kafka, or Redis Streams</strong> for message queue implementation.</p>
+<ul>
+<li><strong>RabbitMQ</strong>: Best for understanding traditional messaging patterns, message acknowledgments, and routing.</li>
+<li><strong>Kafka</strong>: Suitable for <strong>high-throughput</strong> use cases, involving distributed logs and consumer groups.</li>
+<li><strong>Redis Streams</strong>: Provides real-time event streaming while leveraging Redis as an in-memory data store.</li>
+</ul>
+</li>
+<li><p><strong>Core Concepts:</strong></p>
+<ul>
+<li><strong>Publish&#x2F;Subscribe Model</strong>: Each service subscribes to messages relevant to its functionality.</li>
+<li><strong>Message Acknowledgment &amp; Retry</strong>: Ensure reliable message processing with retries and dead-letter queues.</li>
+<li><strong>Idempotency Handling</strong>: Prevent duplicate processing errors (e.g., avoiding double inventory deduction).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Project-Development-Steps"><a href="#Project-Development-Steps" class="headerlink" title="Project Development Steps"></a><strong>Project Development Steps</strong></h3><ol>
+<li><p><strong>Requirement Design &amp; Technology Selection</strong></p>
+<ul>
+<li><p>Define service responsibilities and API design.</p>
+</li>
+<li><p>Select a message broker (e.g., RabbitMQ) and set up the development environment, possibly using <strong>Docker</strong>.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Microservices Development &amp; REST API Implementation</strong></p>
+<ul>
+<li>Develop APIs for order, inventory, payment, and notification services.</li>
+<li>Create a simple frontend or use <strong>Postman</strong> to simulate user actions.</li>
+</ul>
+</li>
+<li><p><strong>Integrating Message Queue</strong></p>
+<ul>
+<li>The order service publishes <strong>order creation events</strong>.</li>
+<li>Other services (inventory, payment, notification) subscribe to relevant queues and process messages.</li>
+</ul>
+</li>
+<li><p><strong>Enhancing Fault Tolerance with Error Handling &amp; Retry Mechanisms</strong></p>
+<ul>
+<li>Implement message acknowledgment and <strong>dead-letter queues</strong> for handling failed messages.</li>
+<li>Add automatic <strong>retry mechanisms</strong> for message processing failures.</li>
+</ul>
+</li>
+<li><p><strong>Testing &amp; Debugging</strong></p>
+<ul>
+<li>Conduct <strong>unit testing</strong> for individual services and <strong>integration testing</strong> for end-to-end functionality.</li>
+<li>Simulate business exceptions (e.g., out-of-stock, payment failures) to validate system robustness.</li>
+</ul>
+</li>
+<li><p><strong>Documentation &amp; Summary</strong></p>
+<ul>
+<li>Write project documentation covering service interactions and message queue usage.</li>
+<li>Reflect on system optimization opportunities.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="Key-Learning-Outcomes"><a href="#Key-Learning-Outcomes" class="headerlink" title="Key Learning Outcomes"></a><strong>Key Learning Outcomes</strong></h3><ul>
+<li><strong>Understanding Asynchronous Architectures</strong>: Learn how to decouple systems for better scalability and fault tolerance.</li>
+<li><strong>Familiarity with Message Queues</strong>: Master the concepts of <strong>publishing, subscribing, acknowledgment, retries, and dead-letter handling</strong>.</li>
+<li><strong>Practical Experience in Microservices Design</strong>: Gain hands-on knowledge of service communication and coordination.</li>
+<li><strong>Real-World Implementation Skills</strong>: Apply message queues in business scenarios to optimize system performance.</li>
+</ul>
+<hr>
+<h3 id="1-Choosing-a-Framework"><a href="#1-Choosing-a-Framework" class="headerlink" title="1. Choosing a Framework"></a><strong>1. Choosing a Framework</strong></h3><ul>
+<li><p><strong>Laravel&#x2F;Lumen</strong></p>
+<ul>
+<li><p>Laravel has a built-in queue system supporting <strong>Redis, RabbitMQ</strong>, and other message brokers.</p>
+</li>
+<li><p>Lumen (a lightweight version of Laravel) is a good choice for microservices.</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Laravel’s queue system simplifies asynchronous task processing for order creation, inventory checks, and payment handling.</p>
+</blockquote>
+<ul>
+<li><p><strong>Symfony</strong></p>
+<ul>
+<li>Symfony offers robust components, and you can integrate <strong>enqueue</strong> to support RabbitMQ, Kafka, and other message queues.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="2-Message-Queue-Integration"><a href="#2-Message-Queue-Integration" class="headerlink" title="2. Message Queue Integration"></a><strong>2. Message Queue Integration</strong></h3><ul>
+<li><p><strong>Using Laravel Queue System</strong></p>
+<ul>
+<li>Laravel’s queue system supports <strong>Redis, Beanstalkd, Amazon SQS</strong>, and more.</li>
+<li>Use <strong>Artisan commands</strong> to create and manage queue jobs.</li>
+</ul>
+</li>
+<li><p><strong>PHP Message Queue Libraries</strong></p>
+<ul>
+<li>Use <strong>php-amqplib</strong> to interact with RabbitMQ directly.</li>
+<li>Use Redis PHP extensions for Redis Streams-based messaging.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="3-Key-Considerations-for-Microservices-Architecture"><a href="#3-Key-Considerations-for-Microservices-Architecture" class="headerlink" title="3. Key Considerations for Microservices Architecture"></a><strong>3. Key Considerations for Microservices Architecture</strong></h3><ul>
+<li><p><strong>Service Decoupling</strong>:</p>
+<ul>
+<li>Message queues <strong>reduce direct dependencies</strong> between services.</li>
+<li>Implement independent microservices for <strong>order, inventory, payment, and notification processing</strong>.</li>
+</ul>
+</li>
+<li><p><strong>Asynchronous Task Handling</strong>:</p>
+<ul>
+<li>PHP is not inherently asynchronous, but queues enable background processing.</li>
+<li>Consider using <strong>Swoole</strong> for enhanced concurrency in PHP applications.</li>
+</ul>
+</li>
+</ul>
+
     </article>
     <!-- license -->
     <!-- paginator -->
@@ -461,6 +691,13 @@
 
         </div>
         <!-- toc -->
+            <div class="toc-wrapper toc-wrapper-loding" style=    top:50vh;
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Project-Name-Microservices-Based-Order-Processing-System-with-Message-Queue"><span class="toc-number">1.</span> <span class="toc-text">Project Name: Microservices-Based Order Processing System with Message Queue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Project-Overview"><span class="toc-number">1.1.</span> <span class="toc-text">Project Overview</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Main-Features-Modules"><span class="toc-number">1.2.</span> <span class="toc-text">Main Features &amp; Modules</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Application-of-Message-Queue-Technology"><span class="toc-number">1.3.</span> <span class="toc-text">Application of Message Queue Technology</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Project-Development-Steps"><span class="toc-number">1.4.</span> <span class="toc-text">Project Development Steps</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Key-Learning-Outcomes"><span class="toc-number">1.5.</span> <span class="toc-text">Key Learning Outcomes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Choosing-a-Framework"><span class="toc-number">1.6.</span> <span class="toc-text">1. Choosing a Framework</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Message-Queue-Integration"><span class="toc-number">1.7.</span> <span class="toc-text">2. Message Queue Integration</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Key-Considerations-for-Microservices-Architecture"><span class="toc-number">1.8.</span> <span class="toc-text">3. Key Considerations for Microservices Architecture</span></a></li></ol></li></ol>
+            </div>
         <!-- sidebar -->
         <div class="sidebar sidebar-hide">
     <ul class="sidebar-tabs sidebar-tabs-active-0">
@@ -541,6 +778,7 @@
         <!-- busuanzi -->
             <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
         <!-- async load share.js -->
+            <script src="/scripts/share.js" async></script>
         <!-- mermaid -->
     </body>
 </html>
