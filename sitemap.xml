@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.thekason.com/2025/03/11/Order%20Processing/</loc>
+    <loc>http://www.thekason.com/2025/03/16/System-Database-Design/System-Database-Design/</loc>
     
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2025-03-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://www.thekason.com/2025/03/14/System's%20Database%20Design/</loc>
+    <loc>http://www.thekason.com/2025/03/11/Order%20Processing/</loc>
     
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2025-03-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,7 +40,7 @@
 
   <url>
     <loc>http://www.thekason.com/</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2025-03-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -48,14 +48,21 @@
   
   <url>
     <loc>http://www.thekason.com/tags/Laravel/</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2025-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.thekason.com/tags/Queue/</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2025-03-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.thekason.com/tags/Database/</loc>
+    <lastmod>2025-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

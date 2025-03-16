@@ -10,23 +10,24 @@
     <meta name="copyright" content="John Doe">
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     <meta name="description" content="">
-    <meta name="description" content="Project Name: Microservices-Based Order Processing System with Message QueueProject OverviewDesign and implement a simplified online shopping order processing system using a microservices architecture">
+    <meta name="description" content="System’s Database Design   Object Data Model DesignUse case analysisThe following is a general use case for the ordering system: A cusotmoer wants to buy a commodity and he or she clicks the checkout">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Order Processing System with Message Queue">
-<meta property="og:url" content="http://www.thekason.com/2025/03/11/Order%20Processing/index.html">
+<meta property="og:title" content="Database Desgin">
+<meta property="og:url" content="http://www.thekason.com/2025/03/16/System-Database-Design/System-Database-Design/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Project Name: Microservices-Based Order Processing System with Message QueueProject OverviewDesign and implement a simplified online shopping order processing system using a microservices architecture">
+<meta property="og:description" content="System’s Database Design   Object Data Model DesignUse case analysisThe following is a general use case for the ordering system: A cusotmoer wants to buy a commodity and he or she clicks the checkout">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-03-11T11:52:56.000Z">
-<meta property="article:modified_time" content="2025-03-16T00:47:37.422Z">
+<meta property="og:image" content="http://www.thekason.com/System-Database-Design/System-Database-Design.md">
+<meta property="article:published_time" content="2025-03-16T00:21:28.000Z">
+<meta property="article:modified_time" content="2025-03-16T00:59:31.197Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="Laravel">
-<meta property="article:tag" content="Queue">
+<meta property="article:tag" content="Database">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.thekason.com/System-Database-Design/System-Database-Design.md">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/kason.ico">
-    <title>Order Processing System with Message Queue · Kason&#39;s cave</title>
+    <title>Database Desgin · Kason&#39;s cave</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -244,7 +245,7 @@
             <a href="/">Kason&#39;s cave</a>
         </div>
         <div class="post-title header-element">
-            <a href="#" class="post-name">Order Processing System with Message Queue</a>
+            <a href="#" class="post-name">Database Desgin</a>
         </div>
     </div>
 </header>
@@ -271,7 +272,7 @@
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
-                Order Processing System with Message Queue
+                Database Desgin
             <!-- 404 -->
         </h1>
         <!-- 副标题 -->
@@ -283,18 +284,17 @@
             <div class="post-intros">
                 <!-- 文章页标签  -->
                     <div class="post-intro-tags" >
-        <a class="post-tag" href="javascript:void(0);" data-tags="Laravel">Laravel</a>
-        <a class="post-tag" href="javascript:void(0);" data-tags="Queue">Queue</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="Database">Database</a>
 </div>
 
                 <!-- 文章字数统计 -->
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">631</span>Reading time: <span class="post-count reading-time">3 min</span></span>
+                        <span>Word count: <span class="post-count word-count">350</span>Reading time: <span class="post-count reading-time">2 min</span></span>
                     </div>
                 <div class="post-intro-meta">
                     <!-- 撰写日期 -->
                     <span class="iconfont-archer post-intro-calander">&#xe676;</span>
-                    <span class="post-intro-time">2025/03/11</span>
+                    <span class="post-intro-time">2025/03/16</span>
                     <!-- busuanzi -->
                         <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                             <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
@@ -446,164 +446,25 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <h2 id="Project-Name-Microservices-Based-Order-Processing-System-with-Message-Queue"><a href="#Project-Name-Microservices-Based-Order-Processing-System-with-Message-Queue" class="headerlink" title="Project Name: Microservices-Based Order Processing System with Message Queue"></a><strong>Project Name: Microservices-Based Order Processing System with Message Queue</strong></h2><h3 id="Project-Overview"><a href="#Project-Overview" class="headerlink" title="Project Overview"></a><strong>Project Overview</strong></h3><p>Design and implement a simplified online shopping order processing system using a microservices architecture. The system decouples order, inventory, payment, and notification modules, enabling asynchronous communication between services via a message queue. This enhances system scalability and fault tolerance while providing hands-on experience with message queues in real-world business scenarios.</p>
+        <h1 id="System’s-Database-Design"><a href="#System’s-Database-Design" class="headerlink" title="System’s Database Design"></a>System’s Database Design</h1><hr>
+<br />
+
+<h2 id="Object-Data-Model-Design"><a href="#Object-Data-Model-Design" class="headerlink" title="Object Data Model Design"></a>Object Data Model Design</h2><h3 id="Use-case-analysis"><a href="#Use-case-analysis" class="headerlink" title="Use case analysis"></a>Use case analysis</h3><p>The following is a general use case for the ordering system:</p>
+<p>A cusotmoer wants to buy a commodity and he or she clicks the <em>checkout</em> button. Consequently the customer is brought to a page of the order where he or she can see all the details including what commodity included and the respective quantity. The the customer decides to proceed the payment and then is presented a payment page where different methods are provided. After the payment is fulfilled, the customer will acknowledge via a form of notification(email, SMS).</p>
+<p>There are four domains that are obvious: User(Customer), Commodity, Order, and Stock. The reson why stock, an attribute of a product, is removed and becomes one individual domain is that stock is largely subject to change, while sperating it can reduce the I&#x2F;O of the database.</p>
+<p>Before getting anything further, I strongly recommend that you should draw out all the classes of object(domain). Trust me, this will definitely help think through everything that you are going to incorporate into the database. If you don’t where to start, start from here <a><a target="_blank" rel="noopener" href="https://github.com/umlet/umlet">https://github.com/umlet/umlet</a></a>. </p>
+<p>The following is my draft for the system:<br><img src="/System-Database-Design/System-Database-Design.md" alt="conceptual desgin"><br><br /></p>
+<h3 id="Logical-model-desgin"><a href="#Logical-model-desgin" class="headerlink" title="Logical model desgin"></a>Logical model desgin</h3><p>The next step is to review the object modeling to identify if there is anything needed to be improved, for example trivial attributes, missing attributes, missing table and so on. More importantly, review the relation between different classes and the relation of one’s attribute to another(i.e. foreign key). If everything’s good, transform the conceptual schema into a set of relational schemas.</p>
+<p>The following is my draft for the system:</p>
+<p><code>USER(user_id, user_name, user_password, user_address, user_avatar, user_payment, browse_record) PRIMARY KEY = (user_id)</code></p>
 <hr>
-<h3 id="Main-Features-Modules"><a href="#Main-Features-Modules" class="headerlink" title="Main Features &amp; Modules"></a><strong>Main Features &amp; Modules</strong></h3><p><strong>Order Service</strong></p>
-<ul>
-<li><p><strong>Functions:</strong></p>
-<ul>
-<li>Receive user order requests, validate order data, and store it initially.<ul>
-<li>Validation ensures completeness and correctness:<ol>
-<li>Order amount cannot be negative.</li>
-<li>Product ID must be valid.</li>
-<li>Purchase quantity must be a positive integer.</li>
-</ol>
-</li>
-<li>Frontend data validation methods:<ol>
-<li>Use token-based authentication.</li>
-<li>Implement signature mechanisms.</li>
-<li>Prevent CSRF (Cross-Site Request Forgery).</li>
-</ol>
-</li>
-</ul>
-</li>
-<li>Publish order creation events to the message queue.</li>
-</ul>
-</li>
-<li><p><strong>Key Learning Points:</strong></p>
-<ul>
-<li>How to encapsulate business events as messages and publish them to a queue.</li>
-</ul>
-</li>
-</ul>
-<p><strong>Inventory Service</strong></p>
-<ul>
-<li><p><strong>Functions:</strong></p>
-<ul>
-<li>Listen for order creation messages and check the inventory.</li>
-<li>Lock inventory if available, then send confirmation or failure messages.</li>
-</ul>
-</li>
-<li><p><strong>Key Learning Points:</strong></p>
-<ul>
-<li>How to subscribe to a message queue and process messages.</li>
-<li>Ensure <strong>idempotency</strong> (avoid duplicate inventory deductions).</li>
-</ul>
-</li>
-</ul>
-<p><strong>Payment Service</strong></p>
-<ul>
-<li><p><strong>Functions:</strong></p>
-<ul>
-<li>Process order payments after inventory confirmation.</li>
-<li>After payment completion, notify other services via message queue.</li>
-</ul>
-</li>
-<li><p><strong>Key Learning Points:</strong></p>
-<ul>
-<li>Implement an <strong>asynchronous payment process</strong> and simulate a payment gateway with callback handling.</li>
-</ul>
-</li>
-</ul>
-<p><strong>Notification Service</strong></p>
-<ul>
-<li><p><strong>Functions:</strong></p>
-<ul>
-<li>Receive payment results or order status updates and send email&#x2F;SMS notifications to users.</li>
-</ul>
-</li>
-<li><p><strong>Key Learning Points:</strong></p>
-<ul>
-<li>Message consumption and <strong>reliable message delivery</strong>.</li>
-<li>Handling delayed tasks (e.g., order timeout notifications).</li>
-</ul>
-</li>
-</ul>
+<p><code>ORDER(order_id, user_id, time_created)</code><br><code>PRIMARY KEY = (order_id)</code><br><code>FOREIGN KEY (user_id) REFERENCES USER(user_id)</code></p>
 <hr>
-<h3 id="Application-of-Message-Queue-Technology"><a href="#Application-of-Message-Queue-Technology" class="headerlink" title="Application of Message Queue Technology"></a><strong>Application of Message Queue Technology</strong></h3><ul>
-<li><p><strong>Choosing a Message Broker:</strong><br>You can use <strong>RabbitMQ, Kafka, or Redis Streams</strong> for message queue implementation.</p>
-<ul>
-<li><strong>RabbitMQ</strong>: Best for understanding traditional messaging patterns, message acknowledgments, and routing.</li>
-<li><strong>Kafka</strong>: Suitable for <strong>high-throughput</strong> use cases, involving distributed logs and consumer groups.</li>
-<li><strong>Redis Streams</strong>: Provides real-time event streaming while leveraging Redis as an in-memory data store.</li>
-</ul>
-</li>
-<li><p><strong>Core Concepts:</strong></p>
-<ul>
-<li><strong>Publish&#x2F;Subscribe Model</strong>: Each service subscribes to messages relevant to its functionality.</li>
-<li><strong>Message Acknowledgment &amp; Retry</strong>: Ensure reliable message processing with retries and dead-letter queues.</li>
-<li><strong>Idempotency Handling</strong>: Prevent duplicate processing errors (e.g., avoiding double inventory deduction).</li>
-</ul>
-</li>
-</ul>
+<p><code>PRODUCT(product_id, category, product_image, product_description)</code><br><code>PRIMARY KEY = (product_id)</code></p>
 <hr>
-<h3 id="Project-Development-Steps"><a href="#Project-Development-Steps" class="headerlink" title="Project Development Steps"></a><strong>Project Development Steps</strong></h3><ol>
-<li><p><strong>Requirement Design &amp; Technology Selection</strong></p>
+<p><code>STOCK(product_id, product_stock, warehouse_location)</code><br><code>PRIMARY KEY = (product_id)</code><br><code>FOREIGN KEY (product_id) REFERENCES PRODUCT(product_id)</code></p>
 <ul>
-<li><p>Define service responsibilities and API design.</p>
-</li>
-<li><p>Select a message broker (e.g., RabbitMQ) and set up the development environment, possibly using <strong>Docker</strong>.</p>
-</li>
-</ul>
-</li>
-<li><p><strong>Microservices Development &amp; REST API Implementation</strong></p>
-<ul>
-<li>Develop APIs for order, inventory, payment, and notification services.</li>
-<li>Create a simple frontend or use <strong>Postman</strong> to simulate user actions.</li>
-</ul>
-</li>
-<li><p><strong>Integrating Message Queue</strong></p>
-<ul>
-<li>The order service publishes <strong>order creation events</strong>.</li>
-<li>Other services (inventory, payment, notification) subscribe to relevant queues and process messages.</li>
-</ul>
-</li>
-<li><p><strong>Enhancing Fault Tolerance with Error Handling &amp; Retry Mechanisms</strong></p>
-<ul>
-<li>Implement message acknowledgment and <strong>dead-letter queues</strong> for handling failed messages.</li>
-<li>Add automatic <strong>retry mechanisms</strong> for message processing failures.</li>
-</ul>
-</li>
-<li><p><strong>Testing &amp; Debugging</strong></p>
-<ul>
-<li>Conduct <strong>unit testing</strong> for individual services and <strong>integration testing</strong> for end-to-end functionality.</li>
-<li>Simulate business exceptions (e.g., out-of-stock, payment failures) to validate system robustness.</li>
-</ul>
-</li>
-<li><p><strong>Documentation &amp; Summary</strong></p>
-<ul>
-<li>Write project documentation covering service interactions and message queue usage.</li>
-<li>Reflect on system optimization opportunities.</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h3 id="Key-Learning-Outcomes"><a href="#Key-Learning-Outcomes" class="headerlink" title="Key Learning Outcomes"></a><strong>Key Learning Outcomes</strong></h3><ul>
-<li><strong>Understanding Asynchronous Architectures</strong>: Learn how to decouple systems for better scalability and fault tolerance.</li>
-<li><strong>Familiarity with Message Queues</strong>: Master the concepts of <strong>publishing, subscribing, acknowledgment, retries, and dead-letter handling</strong>.</li>
-<li><strong>Practical Experience in Microservices Design</strong>: Gain hands-on knowledge of service communication and coordination.</li>
-<li><strong>Real-World Implementation Skills</strong>: Apply message queues in business scenarios to optimize system performance.</li>
-</ul>
-<hr>
-<h3 id="1-Choosing-a-Framework"><a href="#1-Choosing-a-Framework" class="headerlink" title="1. Choosing a Framework"></a><strong>1. Choosing a Framework</strong></h3><ul>
-<li><strong>Express.js</strong></li>
-</ul>
-<hr>
-<h3 id="2-Message-Queue-Integration"><a href="#2-Message-Queue-Integration" class="headerlink" title="2. Message Queue Integration"></a><strong>2. Message Queue Integration</strong></h3><ul>
-<li><p>Express.js doesn’t have intrinsic mechanism support message queuing. Nevertheless, it is able to support message broker function via middleware such as: </p>
-<ul>
-<li>RabbitMQ&#x2F;Redis</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h3 id="3-Key-Considerations-for-Microservices-Architecture"><a href="#3-Key-Considerations-for-Microservices-Architecture" class="headerlink" title="3. Key Considerations for Microservices Architecture"></a><strong>3. Key Considerations for Microservices Architecture</strong></h3><ul>
-<li><p><strong>Service Decoupling</strong>:</p>
-<ul>
-<li>Message queues <strong>reduce direct dependencies</strong> between services.</li>
-<li>Implement independent microservices for <strong>order, inventory, payment, and notification processing</strong>.</li>
-</ul>
-</li>
+<li>To ensure that a product can only have at most one stock record, <code>product_id</code>is referenced as the primary key of Stock’s table.</li>
 </ul>
 
     </article>
@@ -611,12 +472,12 @@
     <!-- paginator -->
     <ul class="post-paginator">
         <li class="next">
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2025/03/16/System-Database-Design/System-Database-Design/" title="Database Desgin">
-                    <div class="nextTitle">Database Desgin</div>
-                </a>
         </li>
         <li class="previous">
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2025/03/11/Order%20Processing/" title="Order Processing System with Message Queue">
+                    <div class="prevTitle">Order Processing System with Message Queue</div>
+                </a>
         </li>
     </ul>
     <!-- comment -->
@@ -670,7 +531,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Project-Name-Microservices-Based-Order-Processing-System-with-Message-Queue"><span class="toc-number">1.</span> <span class="toc-text">Project Name: Microservices-Based Order Processing System with Message Queue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Project-Overview"><span class="toc-number">1.1.</span> <span class="toc-text">Project Overview</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Main-Features-Modules"><span class="toc-number">1.2.</span> <span class="toc-text">Main Features &amp; Modules</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Application-of-Message-Queue-Technology"><span class="toc-number">1.3.</span> <span class="toc-text">Application of Message Queue Technology</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Project-Development-Steps"><span class="toc-number">1.4.</span> <span class="toc-text">Project Development Steps</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Key-Learning-Outcomes"><span class="toc-number">1.5.</span> <span class="toc-text">Key Learning Outcomes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Choosing-a-Framework"><span class="toc-number">1.6.</span> <span class="toc-text">1. Choosing a Framework</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Message-Queue-Integration"><span class="toc-number">1.7.</span> <span class="toc-text">2. Message Queue Integration</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Key-Considerations-for-Microservices-Architecture"><span class="toc-number">1.8.</span> <span class="toc-text">3. Key Considerations for Microservices Architecture</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#System%E2%80%99s-Database-Design"><span class="toc-number">1.</span> <span class="toc-text">System’s Database Design</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Object-Data-Model-Design"><span class="toc-number">1.1.</span> <span class="toc-text">Object Data Model Design</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Use-case-analysis"><span class="toc-number">1.1.1.</span> <span class="toc-text">Use case analysis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Logical-model-desgin"><span class="toc-number">1.1.2.</span> <span class="toc-text">Logical model desgin</span></a></li></ol></li></ol></li></ol>
             </div>
         <!-- sidebar -->
         <div class="sidebar sidebar-hide">
