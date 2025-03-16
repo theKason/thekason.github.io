@@ -10,23 +10,21 @@
     <meta name="copyright" content="John Doe">
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     <meta name="description" content="">
-    <meta name="description" content="Project Name: Microservices-Based Order Processing System with Message QueueProject OverviewDesign and implement a simplified online shopping order processing system using a microservices architecture">
+    <meta name="description" content="12345layout: posttitle: &quot;API design&quot;date: 2025-03-16 16:40:59abstract: This design follows the event-driven architecture, making the system more loosely coupled, scalable, and fault-tolerant">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Order Processing System with Message Queue">
-<meta property="og:url" content="http://www.thekason.com/2025/03/11/Order%20Processing/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://www.thekason.com/2025/03/16/API%20Definition%20for%20Order%20Processing%20System/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Project Name: Microservices-Based Order Processing System with Message QueueProject OverviewDesign and implement a simplified online shopping order processing system using a microservices architecture">
+<meta property="og:description" content="12345layout: posttitle: &quot;API design&quot;date: 2025-03-16 16:40:59abstract: This design follows the event-driven architecture, making the system more loosely coupled, scalable, and fault-tolerant">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-03-11T11:52:56.000Z">
-<meta property="article:modified_time" content="2025-03-16T00:47:37.422Z">
+<meta property="article:published_time" content="2025-03-16T04:47:34.404Z">
+<meta property="article:modified_time" content="2025-03-16T05:41:13.138Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="Laravel">
-<meta property="article:tag" content="Queue">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/kason.ico">
-    <title>Order Processing System with Message Queue · Kason&#39;s cave</title>
+    <title>Kason&#39;s cave</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -244,7 +242,7 @@
             <a href="/">Kason&#39;s cave</a>
         </div>
         <div class="post-title header-element">
-            <a href="#" class="post-name">Order Processing System with Message Queue</a>
+            <a href="#" class="post-name"></a>
         </div>
     </div>
 </header>
@@ -271,7 +269,7 @@
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
-                Order Processing System with Message Queue
+                [Untitled Post]
             <!-- 404 -->
         </h1>
         <!-- 副标题 -->
@@ -283,18 +281,16 @@
             <div class="post-intros">
                 <!-- 文章页标签  -->
                     <div class="post-intro-tags" >
-        <a class="post-tag" href="javascript:void(0);" data-tags="Laravel">Laravel</a>
-        <a class="post-tag" href="javascript:void(0);" data-tags="Queue">Queue</a>
 </div>
 
                 <!-- 文章字数统计 -->
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">631</span>Reading time: <span class="post-count reading-time">3 min</span></span>
+                        <span>Word count: <span class="post-count word-count">616</span>Reading time: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 <div class="post-intro-meta">
                     <!-- 撰写日期 -->
                     <span class="iconfont-archer post-intro-calander">&#xe676;</span>
-                    <span class="post-intro-time">2025/03/11</span>
+                    <span class="post-intro-time">2025/03/16</span>
                     <!-- busuanzi -->
                         <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                             <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
@@ -446,162 +442,109 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <h2 id="Project-Name-Microservices-Based-Order-Processing-System-with-Message-Queue"><a href="#Project-Name-Microservices-Based-Order-Processing-System-with-Message-Queue" class="headerlink" title="Project Name: Microservices-Based Order Processing System with Message Queue"></a><strong>Project Name: Microservices-Based Order Processing System with Message Queue</strong></h2><h3 id="Project-Overview"><a href="#Project-Overview" class="headerlink" title="Project Overview"></a><strong>Project Overview</strong></h3><p>Design and implement a simplified online shopping order processing system using a microservices architecture. The system decouples order, inventory, payment, and notification modules, enabling asynchronous communication between services via a message queue. This enhances system scalability and fault tolerance while providing hands-on experience with message queues in real-world business scenarios.</p>
-<hr>
-<h3 id="Main-Features-Modules"><a href="#Main-Features-Modules" class="headerlink" title="Main Features &amp; Modules"></a><strong>Main Features &amp; Modules</strong></h3><p><strong>Order Service</strong></p>
-<ul>
-<li><p><strong>Functions:</strong></p>
-<ul>
-<li>Receive user order requests, validate order data, and store it initially.<ul>
-<li>Validation ensures completeness and correctness:<ol>
-<li>Order amount cannot be negative.</li>
-<li>Product ID must be valid.</li>
-<li>Purchase quantity must be a positive integer.</li>
-</ol>
+        <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&quot;API design&quot;</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2025-03-16 16:40:59</span></span><br><span class="line"><span class="attr">abstract:</span> <span class="string">This</span> <span class="string">design</span> <span class="string">follows</span> <span class="string">the</span> <span class="string">event-driven</span> <span class="string">architecture,</span> <span class="string">making</span> <span class="string">the</span> <span class="string">system</span> <span class="string">more</span> <span class="string">loosely</span> <span class="string">coupled,</span> <span class="string">scalable,</span> <span class="string">and</span> <span class="string">fault-tolerant.</span></span><br><span class="line"><span class="attr">tags:</span> [<span class="string">API</span>, <span class="string">event-driven</span>]</span><br></pre></td></tr></table></figure>
+
+<h1 id="API-Definition-for-Order-Processing-System"><a href="#API-Definition-for-Order-Processing-System" class="headerlink" title="API Definition for Order Processing System"></a>API Definition for Order Processing System</h1><hr>
+<h2 id="1-Order-Service"><a href="#1-Order-Service" class="headerlink" title="1. Order Service"></a>1. Order Service</h2><h3 id="1-1-Create-Order-Endpoint"><a href="#1-1-Create-Order-Endpoint" class="headerlink" title="1.1 Create Order Endpoint"></a>1.1 Create Order Endpoint</h3><ul>
+<li><p><strong>Method:</strong> POST</p>
 </li>
-<li>Frontend data validation methods:<ol>
-<li>Use token-based authentication.</li>
-<li>Implement signature mechanisms.</li>
-<li>Prevent CSRF (Cross-Site Request Forgery).</li>
-</ol>
+<li><p><strong>URL:</strong> <code>/api/orders/create</code></p>
 </li>
+<li><p><strong>Request Example:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;userId&quot;: &quot;123456&quot;,</span><br><span class="line">    &quot;token&quot;: &quot;user authentication token&quot;,</span><br><span class="line">    &quot;signature&quot;: &quot;digital signature&quot;,</span><br><span class="line">    &quot;orderAmount&quot;: 100.50,</span><br><span class="line">    &quot;items&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;productId&quot;: &quot;P001&quot;,</span><br><span class="line">            &quot;quantity&quot;: 2</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;productId&quot;: &quot;P002&quot;,</span><br><span class="line">            &quot;quantity&quot;: 1</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Response Example (Success):</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> &quot;code&quot;: 200,</span><br><span class="line"> &quot;message&quot;: &quot;Order created successfully&quot;,</span><br><span class="line"> &quot;orderId&quot;: &quot;ORD123456&quot;,</span><br><span class="line"> &quot;status&quot;: &quot;pending&quot; // Indicates awaiting inventory confirmation</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Notes:</strong></p>
+<ul>
+<li>The backend should validate the data:<ul>
+<li><strong>Order Amount:</strong> Must not be negative.</li>
+<li><strong>Product ID:</strong> Must be valid.</li>
+<li><strong>Quantity:</strong> Must be a positive integer.</li>
 </ul>
 </li>
-<li>Publish order creation events to the message queue.</li>
-</ul>
-</li>
-<li><p><strong>Key Learning Points:</strong></p>
-<ul>
-<li>How to encapsulate business events as messages and publish them to a queue.</li>
+<li>Token-based authentication, digital signature, and CSRF prevention are used.</li>
+<li>Upon successful creation, an order event is pushed to the message queue for the inventory service.</li>
 </ul>
 </li>
 </ul>
-<p><strong>Inventory Service</strong></p>
-<ul>
-<li><p><strong>Functions:</strong></p>
-<ul>
-<li>Listen for order creation messages and check the inventory.</li>
-<li>Lock inventory if available, then send confirmation or failure messages.</li>
-</ul>
+<br />
+
+<h2 id="2-Inventory-Service"><a href="#2-Inventory-Service" class="headerlink" title="2. Inventory Service"></a>2. Inventory Service</h2><h3 id="2-1-Lock-Inventory-Endpoint"><a href="#2-1-Lock-Inventory-Endpoint" class="headerlink" title="2.1 Lock Inventory Endpoint"></a>2.1 Lock Inventory Endpoint</h3><ul>
+<li><p><strong>Method:</strong> POST</p>
 </li>
-<li><p><strong>Key Learning Points:</strong></p>
-<ul>
-<li>How to subscribe to a message queue and process messages.</li>
-<li>Ensure <strong>idempotency</strong> (avoid duplicate inventory deductions).</li>
-</ul>
+<li><p><strong>URL:</strong> <code>/api/inventory/lock</code></p>
 </li>
+<li><p><strong>Request Example:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;orderId&quot;: &quot;ORD123456&quot;,</span><br><span class="line">    &quot;items&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;productId&quot;: &quot;P001&quot;,</span><br><span class="line">            &quot;quantity&quot;: 2</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;productId&quot;: &quot;P002&quot;,</span><br><span class="line">            &quot;quantity&quot;: 1</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
-<p><strong>Payment Service</strong></p>
 <ul>
-<li><p><strong>Functions:</strong></p>
-<ul>
-<li>Process order payments after inventory confirmation.</li>
-<li>After payment completion, notify other services via message queue.</li>
-</ul>
+<li><p><strong>Response Example (Success):</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 200,</span><br><span class="line">    &quot;message&quot;: &quot;Inventory locked successfully&quot;,</span><br><span class="line">    &quot;locked&quot;: true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>Key Learning Points:</strong></p>
-<ul>
-<li>Implement an <strong>asynchronous payment process</strong> and simulate a payment gateway with callback handling.</li>
+<li><p><strong>Response Example (Failure):</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 400,</span><br><span class="line">    &quot;message&quot;: &quot;Insufficient inventory&quot;,</span><br><span class="line">    &quot;locked&quot;: false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
+<ul>
+<li><p><strong>Notes:</strong></p>
+<ul>
+<li><p>This endpoint is generally <strong>triggered by the message queue when an order creation event is received</strong>.</p>
 </li>
-</ul>
-<p><strong>Notification Service</strong></p>
-<ul>
-<li><p><strong>Functions:</strong></p>
-<ul>
-<li>Receive payment results or order status updates and send email&#x2F;SMS notifications to users.</li>
-</ul>
-</li>
-<li><p><strong>Key Learning Points:</strong></p>
-<ul>
-<li>Message consumption and <strong>reliable message delivery</strong>.</li>
-<li>Handling delayed tasks (e.g., order timeout notifications).</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h3 id="Application-of-Message-Queue-Technology"><a href="#Application-of-Message-Queue-Technology" class="headerlink" title="Application of Message Queue Technology"></a><strong>Application of Message Queue Technology</strong></h3><ul>
-<li><p><strong>Choosing a Message Broker:</strong><br>You can use <strong>RabbitMQ, Kafka, or Redis Streams</strong> for message queue implementation.</p>
-<ul>
-<li><strong>RabbitMQ</strong>: Best for understanding traditional messaging patterns, message acknowledgments, and routing.</li>
-<li><strong>Kafka</strong>: Suitable for <strong>high-throughput</strong> use cases, involving distributed logs and consumer groups.</li>
-<li><strong>Redis Streams</strong>: Provides real-time event streaming while leveraging Redis as an in-memory data store.</li>
-</ul>
-</li>
-<li><p><strong>Core Concepts:</strong></p>
-<ul>
-<li><strong>Publish&#x2F;Subscribe Model</strong>: Each service subscribes to messages relevant to its functionality.</li>
-<li><strong>Message Acknowledgment &amp; Retry</strong>: Ensure reliable message processing with retries and dead-letter queues.</li>
-<li><strong>Idempotency Handling</strong>: Prevent duplicate processing errors (e.g., avoiding double inventory deduction).</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h3 id="Project-Development-Steps"><a href="#Project-Development-Steps" class="headerlink" title="Project Development Steps"></a><strong>Project Development Steps</strong></h3><ol>
-<li><p><strong>Requirement Design &amp; Technology Selection</strong></p>
-<ul>
-<li><p>Define service responsibilities and API design.</p>
-</li>
-<li><p>Select a message broker (e.g., RabbitMQ) and set up the development environment, possibly using <strong>Docker</strong>.</p>
+<li><p>Ensure <strong>idempotency</strong> to prevent duplicate inventory deductions.</p>
 </li>
 </ul>
 </li>
-<li><p><strong>Microservices Development &amp; REST API Implementation</strong></p>
-<ul>
-<li>Develop APIs for order, inventory, payment, and notification services.</li>
-<li>Create a simple frontend or use <strong>Postman</strong> to simulate user actions.</li>
 </ul>
+<br />
+
+<h2 id="3-Payment-Service"><a href="#3-Payment-Service" class="headerlink" title="3. Payment Service"></a>3. Payment Service</h2><h3 id="3-1-Process-Payment-Endpoint"><a href="#3-1-Process-Payment-Endpoint" class="headerlink" title="3.1 Process Payment Endpoint"></a>3.1 Process Payment Endpoint</h3><ul>
+<li><p><strong>Method:</strong> POST</p>
 </li>
-<li><p><strong>Integrating Message Queue</strong></p>
-<ul>
-<li>The order service publishes <strong>order creation events</strong>.</li>
-<li>Other services (inventory, payment, notification) subscribe to relevant queues and process messages.</li>
-</ul>
+<li><p><strong>URL:</strong> <code>/api/payment/process</code></p>
 </li>
-<li><p><strong>Enhancing Fault Tolerance with Error Handling &amp; Retry Mechanisms</strong></p>
-<ul>
-<li>Implement message acknowledgment and <strong>dead-letter queues</strong> for handling failed messages.</li>
-<li>Add automatic <strong>retry mechanisms</strong> for message processing failures.</li>
+<li><p><strong>Request Example:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;orderId&quot;: &quot;ORD123456&quot;,</span><br><span class="line">    &quot;userId&quot;: &quot;123456&quot;,</span><br><span class="line">    &quot;paymentAmount&quot;: 100.50,</span><br><span class="line">    &quot;paymentMethod&quot;: &quot;credit_card&quot;,  // e.g., credit_card, paypal, etc.</span><br><span class="line">    &quot;paymentDetails&quot;: &#123;</span><br><span class="line">        &quot;cardNumber&quot;: &quot;4111111111111111&quot;,</span><br><span class="line">        &quot;expiryDate&quot;: &quot;12/25&quot;,</span><br><span class="line">        &quot;cvv&quot;: &quot;123&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
+<ul>
+<li><p><strong>Response Example (Success):</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 200,</span><br><span class="line">    &quot;message&quot;: &quot;Payment successful&quot;,</span><br><span class="line">    &quot;paymentStatus&quot;: &quot;completed&quot;,</span><br><span class="line">    &quot;transactionId&quot;: &quot;TXN789012&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>Testing &amp; Debugging</strong></p>
-<ul>
-<li>Conduct <strong>unit testing</strong> for individual services and <strong>integration testing</strong> for end-to-end functionality.</li>
-<li>Simulate business exceptions (e.g., out-of-stock, payment failures) to validate system robustness.</li>
+<li><p><strong>Response Example (Failure):</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 400,</span><br><span class="line">    &quot;message&quot;: &quot;Payment failed due to insufficient funds&quot;,</span><br><span class="line">    &quot;paymentStatus&quot;: &quot;failed&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
+<ul>
+<li><p><strong>Notes:</strong></p>
+<ul>
+<li><p>This endpoint is triggered after the inventory service confirms the inventory lock.</p>
 </li>
-<li><p><strong>Documentation &amp; Summary</strong></p>
-<ul>
-<li>Write project documentation covering service interactions and message queue usage.</li>
-<li>Reflect on system optimization opportunities.</li>
-</ul>
+<li><p>On successful payment, a message is sent to notify other services (such as the notification service) about the updated order status.</p>
 </li>
-</ol>
-<hr>
-<h3 id="Key-Learning-Outcomes"><a href="#Key-Learning-Outcomes" class="headerlink" title="Key Learning Outcomes"></a><strong>Key Learning Outcomes</strong></h3><ul>
-<li><strong>Understanding Asynchronous Architectures</strong>: Learn how to decouple systems for better scalability and fault tolerance.</li>
-<li><strong>Familiarity with Message Queues</strong>: Master the concepts of <strong>publishing, subscribing, acknowledgment, retries, and dead-letter handling</strong>.</li>
-<li><strong>Practical Experience in Microservices Design</strong>: Gain hands-on knowledge of service communication and coordination.</li>
-<li><strong>Real-World Implementation Skills</strong>: Apply message queues in business scenarios to optimize system performance.</li>
-</ul>
-<hr>
-<h3 id="1-Choosing-a-Framework"><a href="#1-Choosing-a-Framework" class="headerlink" title="1. Choosing a Framework"></a><strong>1. Choosing a Framework</strong></h3><ul>
-<li><strong>Express.js</strong></li>
-</ul>
-<hr>
-<h3 id="2-Message-Queue-Integration"><a href="#2-Message-Queue-Integration" class="headerlink" title="2. Message Queue Integration"></a><strong>2. Message Queue Integration</strong></h3><ul>
-<li><p>Express.js doesn’t have intrinsic mechanism support message queuing. Nevertheless, it is able to support message broker function via middleware such as: </p>
-<ul>
-<li>RabbitMQ&#x2F;Redis</li>
+<li><p>The endpoint simulates an asynchronous payment process, including handling callbacks from a payment gateway.</p>
+</li>
 </ul>
 </li>
 </ul>
-<hr>
-<h3 id="3-Key-Considerations-for-Microservices-Architecture"><a href="#3-Key-Considerations-for-Microservices-Architecture" class="headerlink" title="3. Key Considerations for Microservices Architecture"></a><strong>3. Key Considerations for Microservices Architecture</strong></h3><ul>
-<li><p><strong>Service Decoupling</strong>:</p>
+<br />
+
+<h2 id="4-Notification-Service"><a href="#4-Notification-Service" class="headerlink" title="4. Notification Service"></a>4. Notification Service</h2><h3 id="4-1-Send-Notification-Endpoint"><a href="#4-1-Send-Notification-Endpoint" class="headerlink" title="4.1 Send Notification Endpoint"></a>4.1 Send Notification Endpoint</h3><ul>
+<li><p><strong>Method:</strong> POST</p>
+</li>
+<li><p><strong>URL:</strong> <code>/api/notification/send</code></p>
+</li>
+<li><p><strong>Request Example:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;userId&quot;: &quot;123456&quot;,</span><br><span class="line">    &quot;notificationType&quot;: &quot;email&quot;,  // Options: &quot;email&quot; or &quot;sms&quot;</span><br><span class="line">    &quot;subject&quot;: &quot;Order Status Update&quot;,</span><br><span class="line">    &quot;message&quot;: &quot;Your order ORD123456 has been successfully paid.&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Request Example:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 200,</span><br><span class="line">    &quot;message&quot;: &quot;Notification sent successfully&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Response Example:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;code&quot;: 200,</span><br><span class="line">    &quot;message&quot;: &quot;Notification sent successfully&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Notes:</strong></p>
 <ul>
-<li>Message queues <strong>reduce direct dependencies</strong> between services.</li>
-<li>Implement independent microservices for <strong>order, inventory, payment, and notification processing</strong>.</li>
+<li>This endpoint is triggered by the message queue when payment results or order status updates are received.</li>
+<li>It handles sending notifications via email or SMS and can also manage delayed tasks (e.g., order timeout alerts).</li>
 </ul>
 </li>
 </ul>
@@ -611,12 +554,12 @@
     <!-- paginator -->
     <ul class="post-paginator">
         <li class="next">
-                <div class="nextSlogan">Next Post</div>
-                <a href="/2025/03/16/System-Database-Design/System-Database-Design/" title="Database Desgin">
-                    <div class="nextTitle">Database Desgin</div>
-                </a>
         </li>
         <li class="previous">
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2025/03/16/System-Database-Design/System-Database-Design/" title="Database Desgin">
+                    <div class="prevTitle">Database Desgin</div>
+                </a>
         </li>
     </ul>
     <!-- comment -->
@@ -670,7 +613,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Project-Name-Microservices-Based-Order-Processing-System-with-Message-Queue"><span class="toc-number">1.</span> <span class="toc-text">Project Name: Microservices-Based Order Processing System with Message Queue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Project-Overview"><span class="toc-number">1.1.</span> <span class="toc-text">Project Overview</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Main-Features-Modules"><span class="toc-number">1.2.</span> <span class="toc-text">Main Features &amp; Modules</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Application-of-Message-Queue-Technology"><span class="toc-number">1.3.</span> <span class="toc-text">Application of Message Queue Technology</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Project-Development-Steps"><span class="toc-number">1.4.</span> <span class="toc-text">Project Development Steps</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Key-Learning-Outcomes"><span class="toc-number">1.5.</span> <span class="toc-text">Key Learning Outcomes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Choosing-a-Framework"><span class="toc-number">1.6.</span> <span class="toc-text">1. Choosing a Framework</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Message-Queue-Integration"><span class="toc-number">1.7.</span> <span class="toc-text">2. Message Queue Integration</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Key-Considerations-for-Microservices-Architecture"><span class="toc-number">1.8.</span> <span class="toc-text">3. Key Considerations for Microservices Architecture</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#API-Definition-for-Order-Processing-System"><span class="toc-number">1.</span> <span class="toc-text">API Definition for Order Processing System</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Order-Service"><span class="toc-number">1.1.</span> <span class="toc-text">1. Order Service</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-Create-Order-Endpoint"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1 Create Order Endpoint</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Inventory-Service"><span class="toc-number">1.2.</span> <span class="toc-text">2. Inventory Service</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Lock-Inventory-Endpoint"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 Lock Inventory Endpoint</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Payment-Service"><span class="toc-number">1.3.</span> <span class="toc-text">3. Payment Service</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-Process-Payment-Endpoint"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 Process Payment Endpoint</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Notification-Service"><span class="toc-number">1.4.</span> <span class="toc-text">4. Notification Service</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-Send-Notification-Endpoint"><span class="toc-number">1.4.1.</span> <span class="toc-text">4.1 Send Notification Endpoint</span></a></li></ol></li></ol></li></ol>
             </div>
         <!-- sidebar -->
         <div class="sidebar sidebar-hide">
