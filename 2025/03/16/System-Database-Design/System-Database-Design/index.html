@@ -17,13 +17,13 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="System’s Database Design   Object Data Model DesignUse case analysisThe following is a general use case for the ordering system: A cusotmoer wants to buy a commodity and he or she clicks the checkout">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://www.thekason.com/System-Database-Design/System-Database-Design.md">
+<meta property="og:image" content="http://www.thekason.com/assets/conceptual_design.jpg">
 <meta property="article:published_time" content="2025-03-16T00:21:28.000Z">
-<meta property="article:modified_time" content="2025-03-16T00:59:31.197Z">
+<meta property="article:modified_time" content="2025-03-16T01:08:36.243Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Database">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://www.thekason.com/System-Database-Design/System-Database-Design.md">
+<meta name="twitter:image" content="http://www.thekason.com/assets/conceptual_design.jpg">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/kason.ico">
@@ -267,7 +267,7 @@
     <!-- 主页  -->
     <!-- 404页  -->
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/lantern.jpeg)"></div>
+    <div class="site-intro-img" style="background-image: url(/assets/ict.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
@@ -453,7 +453,7 @@
 <p>A cusotmoer wants to buy a commodity and he or she clicks the <em>checkout</em> button. Consequently the customer is brought to a page of the order where he or she can see all the details including what commodity included and the respective quantity. The the customer decides to proceed the payment and then is presented a payment page where different methods are provided. After the payment is fulfilled, the customer will acknowledge via a form of notification(email, SMS).</p>
 <p>There are four domains that are obvious: User(Customer), Commodity, Order, and Stock. The reson why stock, an attribute of a product, is removed and becomes one individual domain is that stock is largely subject to change, while sperating it can reduce the I&#x2F;O of the database.</p>
 <p>Before getting anything further, I strongly recommend that you should draw out all the classes of object(domain). Trust me, this will definitely help think through everything that you are going to incorporate into the database. If you don’t where to start, start from here <a><a target="_blank" rel="noopener" href="https://github.com/umlet/umlet">https://github.com/umlet/umlet</a></a>. </p>
-<p>The following is my draft for the system:<br><img src="/System-Database-Design/System-Database-Design.md" alt="conceptual desgin"><br><br /></p>
+<p>The following is my draft for the system:<br><img src="/assets/conceptual_design.jpg" alt="Conceptual Desgin"><br><br /></p>
 <h3 id="Logical-model-desgin"><a href="#Logical-model-desgin" class="headerlink" title="Logical model desgin"></a>Logical model desgin</h3><p>The next step is to review the object modeling to identify if there is anything needed to be improved, for example trivial attributes, missing attributes, missing table and so on. More importantly, review the relation between different classes and the relation of one’s attribute to another(i.e. foreign key). If everything’s good, transform the conceptual schema into a set of relational schemas.</p>
 <p>The following is my draft for the system:</p>
 <p><code>USER(user_id, user_name, user_password, user_address, user_avatar, user_payment, browse_record) PRIMARY KEY = (user_id)</code></p>
