@@ -56,6 +56,20 @@
 
   
   <url>
+    <loc>http://www.thekason.com/tags/API/</loc>
+    <lastmod>2025-03-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.thekason.com/tags/event-driven/</loc>
+    <lastmod>2025-03-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://www.thekason.com/tags/Laravel/</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -71,20 +85,6 @@
   
   <url>
     <loc>http://www.thekason.com/tags/Database/</loc>
-    <lastmod>2025-03-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.thekason.com/tags/API/</loc>
-    <lastmod>2025-03-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.thekason.com/tags/event-driven/</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
